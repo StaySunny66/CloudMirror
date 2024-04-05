@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hy">
+        <item>总体情况</item>
+        <item>网站/APP</item>
+        <item>大数据</item>
+        <item>人工智能</item>
+        <item>物联网</item>
+        <item>网络/IDC</item>
+        <item>安防/监控</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/yuanjiao3"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/ser_name"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/my_blue"
+                android:text=""/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:layout_weight="1.3">
+            <ImageView
+                android:layout_width="40dp"
+
+                android:id="@+id/ser_img"
+                android:adjustViewBounds="true"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:maxHeight="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="match_parent">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="5.0"
+                android:orientation="vertical"
+                android:layout_marginLeft="6sp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CPU"
+                    android:gravity="center"
+                    android:textColor="@color/my_blue"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="RAM"
+                    android:gravity="center"
+                    android:textColor="@color/my_blue"
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingRight="65dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:max="100"
+                    android:id="@+id/ser_cpu"
+                    android:progress="0"
+                    android:layout_margin="5sp"
+                    android:layout_height="match_parent"
+                    android:progressDrawable="@drawable/progress"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+                <ProgressBar
+                    android:layout_weight="1"
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:id="@+id/ser_ram"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
